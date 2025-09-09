@@ -1,6 +1,9 @@
 # Game License Verification System
 
 A modern web application for verifying game licenses, checking regional restrictions, validating age ratings, and ensuring GDPR compliance for gaming platforms. Built with Laravel, Inertia.js, Vue 3, and Tailwind CSS.
+## Output
+
+<img width="1676" height="918" alt="screenshot" src="https://github.com/user-attachments/assets/3ee16d09-7d01-4d71-a04c-f8728580026e" />
 
 ## Features
 
