@@ -6,7 +6,7 @@
     <div class="md:w-1/2 p-8 flex flex-col justify-center bg-gray-50 border-t md:border-t-0 md:border-l border-gray-200">
       <h1 class="text-2xl font-extrabold mb-6 text-blue-700 text-center tracking-tight">Gaming License Verification</h1>
       <nav class="space-y-4 mb-8">
-          <button @click="currentPage = 'VerifyLicense'" :class="navClass('VerifyLicense')">License authenticity verification</button>
+        <button @click="currentPage = 'VerifyLicense'" :class="navClass('VerifyLicense')">License authenticity verification</button>
         <button @click="currentPage = 'AvailableRegions'" :class="navClass('AvailableRegions')">GDPR compliance for regions</button>
         <button @click="currentPage = 'CheckRestrictions'" :class="navClass('CheckRestrictions')">Regional restriction checking</button>
         <button @click="currentPage = 'ValidateAge'" :class="navClass('ValidateAge')">Age rating validation</button>
@@ -42,12 +42,12 @@ export default defineComponent({
     VerifyLicense,
   },
   setup() {
-    const currentPage = ref('AvailableRegions');
+    const currentPage = ref('VerifyLicense');
     const currentComponent = computed(() => {
       return currentPage.value;
     });
     const navClass = (page: string) =>
-      `w-full text-left px-4 py-3 rounded-lg font-semibold shadow transition border border-gray-200 ${
+      `w-full text-left px-4 py-3 rounded-lg font-semibold shadow transition border border-gray-200 cursor-pointer ${
         currentPage.value === page
           ? 'bg-blue-500 text-white' 
           : 'bg-gray-100 hover:bg-blue-100 text-blue-700'

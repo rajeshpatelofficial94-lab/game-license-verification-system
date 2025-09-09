@@ -21,7 +21,7 @@
     </div>
     <button
       @click="validateAge"
-      class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all duration-200 w-full mb-4"
+      class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all duration-200 w-full mb-4 cursor-pointer"
     >
       <span class="flex items-center justify-center gap-2">
         Validate
